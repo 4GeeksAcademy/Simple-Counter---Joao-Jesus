@@ -1,6 +1,6 @@
 import React from "react";
 import GenerateCards from "./card.jsx";
-import ClockComponent from "./clock.jsx"
+
 
 
 //include images into your bundle
@@ -10,8 +10,9 @@ import ClockComponent from "./clock.jsx"
 const Home = () => {
 	return ( 
 	  <div>
-		<ClockComponent seconds={counter} />
-		<GenerateCards imageUrl="http://via.placeholder.com/350x150" title="A nice image" /> 
+		
+		<GenerateCards  />
+		
 	  </div>
 	);
   };

@@ -10,3 +10,19 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.DigitCard{
+   
+    margin: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5px;
+    justify-content: space-around;
+    background-color: gray;
+    
+    .card {
+    background-color: rgba(128, 128, 128, 0.966);
+    
+}
+}
+
