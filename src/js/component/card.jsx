@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 // Function to build the card with the props
-const CardTimer = ({ showCounter, counter, showFa }) => {
+const CardTimer = ({ showCounter, counter, showFa, showNum }) => {
   return (
-    <div className="card color: Tomato">
+    <div className="card card-body">
       {showFa && <i className="fa fa-regular fa-clock " ></i>}
-      
-      <div className="card-body">
-        {showCounter && <p>{counter}</p>}
-      </div>
+      {showNum && <p className="Num" >0</p>}
+      {showCounter && <p>{counter}</p>}
+     
     </div>
 
     
@@ -29,13 +28,13 @@ const GenerateCards = () => {
   }, []);
 
   const cardData = [
-    {  showCounter: false, showFa: true },
-    {  showCounter: false },
-    {  showCounter: false },
-    { showCounter: false },
-    {  showCounter: false },
-    {  showCounter: false },
-    {  showCounter: true }, // Show counter in the last element
+    {  showCounter: false, showFa: true, showNum: false},
+    {  showCounter: false, showNum: true },
+    {  showCounter: false, showNum: true  },
+    {  showCounter: false, showNum: true },
+    {  showCounter: false, showNum: true },
+    {  showCounter: false, showNum: true },
+    {  showCounter: true, showNum: false }, // Show counter in the last element
   ];
 
   return (
@@ -46,6 +45,7 @@ const GenerateCards = () => {
           showCounter={index === cardData.length - 1} // Show counter only in the last element
           counter={counter}
           showFa={index === 0}
+          showNum={index !== 0 && index!==cardData.length -1}
         />
       ))}
     </div>

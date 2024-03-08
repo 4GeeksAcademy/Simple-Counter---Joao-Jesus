@@ -11,10 +11,7 @@
 
 */
 
-.card-body{
-width: 150px;
-height: 50px;
-}
+
 
 .DigitCard{
    
@@ -28,11 +25,11 @@ height: 50px;
     font-size: 80px;
     font-weight: bold;
     width: auto;
-    height: auto;
+    height: 200px;
     text-align: center;
     
     .card {
-    background-color: #070707f6;
+    background-color: #363434f6;
     
 
     .fa{
