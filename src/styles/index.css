@@ -23,7 +23,7 @@ height: 50px;
     flex-wrap: nowrap;
     padding: 5px;
     justify-content: space-around;
-    background-color: black;
+    background-color: rgb(48, 44, 44);
     color: white;
     font-size: 80px;
     font-weight: bold;
@@ -32,11 +32,12 @@ height: 50px;
     text-align: center;
     
     .card {
-    background-color: rgba(128, 128, 128, 0.966);
+    background-color: #070707f6;
     
 
     .fa{
         font-size: 100px;
+        /* color: white; */
     }
 }
 }

@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 // Function to build the card with the props
 const CardTimer = ({ showCounter, counter, showFa }) => {
   return (
-    <div className="card">
-      {showFa && <i className="fa fa-clock text-dark" ></i>}
+    <div className="card color: Tomato">
+      {showFa && <i className="fa fa-regular fa-clock " ></i>}
       
       <div className="card-body">
         {showCounter && <p>{counter}</p>}
