@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-
-const CardTimer = ({  showCounter, counter }) => {
+// Function to build the card with the props
+const CardTimer = ({ showCounter, counter, showFa }) => {
   return (
     <div className="card">
+      {showFa && <i className="fa fa-clock text-dark" ></i>}
       
-      <i class="fa fa-clock"></i>
       <div className="card-body">
         {showCounter && <p>{counter}</p>}
       </div>
@@ -29,7 +29,8 @@ const GenerateCards = () => {
   }, []);
 
   const cardData = [
-    { showCounter: false },
+    {  showCounter: false, showFa: true },
+    {  showCounter: false },
     {  showCounter: false },
     { showCounter: false },
     {  showCounter: false },
@@ -42,9 +43,9 @@ const GenerateCards = () => {
       {cardData.map((card, index) => (
         <CardTimer
           key={index}
-       
           showCounter={index === cardData.length - 1} // Show counter only in the last element
           counter={counter}
+          showFa={index === 0}
         />
       ))}
     </div>

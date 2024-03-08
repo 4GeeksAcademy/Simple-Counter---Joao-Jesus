@@ -11,6 +11,11 @@
 
 */
 
+.card-body{
+width: 150px;
+height: 50px;
+}
+
 .DigitCard{
    
     margin: 0px;
@@ -18,11 +23,21 @@
     flex-wrap: nowrap;
     padding: 5px;
     justify-content: space-around;
-    background-color: gray;
+    background-color: black;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    text-align: center;
     
     .card {
     background-color: rgba(128, 128, 128, 0.966);
     
+
+    .fa{
+        font-size: 100px;
+    }
 }
 }
 
