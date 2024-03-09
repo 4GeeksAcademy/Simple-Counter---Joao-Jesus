@@ -16,18 +16,18 @@
     font-size: 80px;
     background-color: black;
     color: white;
-    justify-content:left;
+    justify-content:space-evenly;
     padding: 10px;
-    margin: 10px 10px 10px 10px;
+   
 
     div {
-    margin-left: 10px;
+    width: 100px;
     background-color: #161616;
+    text-align: center;
 }
 
  i{
     font-size: 100px;
  }
 }
-
 

@@ -6,10 +6,10 @@ import PropTypes from "prop-types";
 // include your styles into the webpack bundle
 import "../styles/index.css";
 
-// Define your component
+// MyCounter component
 function MyCounter(props) {
   return (
-    <div className="Timer">
+    <div className="Timer container-fluid">
       <div className="Clock">
         <i className="far fa-clock"></i>
       </div>
@@ -23,7 +23,7 @@ function MyCounter(props) {
   );
 }
 
-// Define propTypes for your component
+// propTypes for MyCounter component 
 MyCounter.propTypes = {
   digitSix: PropTypes.number,
   digitFive: PropTypes.number,
@@ -33,10 +33,10 @@ MyCounter.propTypes = {
   digitOne: PropTypes.number,
 };
 
-// Initialize counter state
+// Counter state
 let counter = 0;
 
-// Use setInterval to update the counter and render the component
+//  setInterval update the counter and render component
 setInterval(() => {
   const one = Math.floor(counter % 10);
   const two = Math.floor((counter / 10) % 10);
@@ -60,6 +60,6 @@ setInterval(() => {
   counter++;
 }, 1000);
 
-//render your react application
+
 
     
