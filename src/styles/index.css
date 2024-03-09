@@ -11,31 +11,23 @@
 
 */
 
-
-
-.DigitCard{
-   
-    margin: 0px;
+.Timer {
     display: flex;
-    flex-wrap: nowrap;
-    padding: 5px;
-    justify-content: space-around;
-    background-color: rgb(48, 44, 44);
-    color: white;
     font-size: 80px;
-    font-weight: bold;
-    width: auto;
-    height: 200px;
-    text-align: center;
-    
-    .card {
-    background-color: #363434f6;
-    
+    background-color: black;
+    color: white;
+    justify-content:left;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
 
-    .fa{
-        font-size: 100px;
-        /* color: white; */
-    }
+    div {
+    margin-left: 10px;
+    background-color: #161616;
 }
+
+ i{
+    font-size: 100px;
+ }
 }
+
 

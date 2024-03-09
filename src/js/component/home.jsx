@@ -1,32 +1,30 @@
-import React, { useState, useEffect } from "react";
-import GenerateCards from "./card.jsx";
+// import React, { useState, useEffect } from "react";
+
+// //include images into your bundle
 
 
-//include images into your bundle
-
-
-//create your first component
-const Home = () => {
-  //State Concept
+// //create your first component
+// const Home = () => {
+//   //State Concept
  
-   const [counter, setCounter] = useState(0);
+//    const [counter, setCounter] = useState(0);
   
-    useEffect(() => {
-      console.log('Page is Loaded...!');
+//   //   useEffect(() => {
+//   //     console.log('Page is Loaded...!');
   
-      setInterval(() => {
-        setCounter((count) => count + 1);
-      }, 1000); 
-  }, []); 
+//   //     setInterval(() => {
+//   //       setCounter((count) => count + 1);
+//   //     }, 1000); 
+//   // }, []); 
   
-    return (
-      <div className="container">
+//     return (
+//       <div className="container-fluid">
        
-        <GenerateCards counter={counter}/>
+//         <MyCounter />
         
-      </div>
-    );
-};
+//       </div>
+//     );
+// };
   
 
-export default Home;
+// export default Home;
